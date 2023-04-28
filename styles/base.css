@@ -4,6 +4,7 @@ body
     background-color: #f3e9dc;
     color: #f3e9dc;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -18,7 +19,7 @@ header
 
 h1 
 {
-    font-size: 30px;
+    font-size: 27px;
     align-self: center;
     justify-self: center;
 }
@@ -55,4 +56,15 @@ nav>ul>li
 a
 {
     color: inherit;
+}
+
+
+/* Page Title */
+h2
+{
+    color: black;
+    font-size: 17px;
+    border-style: none none solid none;
+    text-align: center;
+    margin-top: 5px;
 }
