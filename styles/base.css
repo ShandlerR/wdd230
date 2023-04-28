@@ -1,0 +1,58 @@
+/* Entire Document */
+body
+{
+    background-color: #f3e9dc;
+    color: #f3e9dc;
+    margin: 0;
+}
+
+
+/* Header */
+header
+{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #895737;
+    justify-content: center;    
+}
+
+h1 
+{
+    font-size: 30px;
+    align-self: center;
+    justify-self: center;
+}
+
+img 
+{
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+
+
+/* Nav Bar */
+nav>ul
+{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: #5e3023;
+    margin: 0;
+    justify-self: center;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+nav>ul>li
+{
+
+    justify-self:center;
+}
+
+a
+{
+    color: inherit;
+}
