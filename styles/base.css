@@ -68,3 +68,29 @@ h2
     text-align: center;
     margin-top: 5px;
 }
+
+/* Learning Activities & Information */
+
+.card
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    color: black;
+    background-color: #DAB49D;
+
+}
+
+.card>h3
+{
+    background-color: #895737;
+    color: #f3e9dc;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.card>ul
+{
+    text-align: center;
+    list-style: none;
+}
