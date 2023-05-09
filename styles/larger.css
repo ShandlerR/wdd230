@@ -40,6 +40,7 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 10px;
+        margin: 0px 20px;
         
     }
 
@@ -62,7 +63,18 @@
 
     .card>ul>li
     {
-        margin: 10px 0px;
+        margin: 10px;
+    }
+
+    .card>p
+    {
+        text-align: center;
+        margin: 35px 0px;
+    }
+
+    .card>h3
+    {
+        text-align: center;
     }
 
     #first
