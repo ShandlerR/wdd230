@@ -19,14 +19,14 @@ h1 {
 }
 
 main {
-    font-size: 12pt;
 	display: grid;
-    grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 }
 
 h2 {
 	color: navy;
-    grid-column: 1/3;
+	text-align: left;
+	grid-column: 1/3;
 }
 
 article p {
@@ -34,10 +34,9 @@ article p {
 }
 
 .callout {
-    border: 2px solid black;
-	color: white;
-	background-color: #702963;
-    padding: 10px 20px;
+	color: #000000;
+	background-color: #8e8ef0;
+	padding: 10px 20px;
 }
 
 footer {
