@@ -69,10 +69,16 @@ nav {
     margin-bottom: 0px;
     background-color: var(--frontColor);
 }
+ul 
+{
+    margin: 0;
+    padding: 0;
+}
 
 li 
 {
     list-style: none;
+    align-self: center;
 }
 
 a 
