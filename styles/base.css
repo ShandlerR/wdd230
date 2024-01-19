@@ -36,7 +36,7 @@ header
     background-color: var(--frontColor);
 }
 
-header>h1 
+header h1 
 {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -46,16 +46,10 @@ header>h1
     font-family: Salsa;
 }
 
-header>img 
+header img 
 {
     width: 300px;
-}
-
-header>h2 
-{
-    margin-top: 5px;
     margin-bottom: 20px;
-    padding:0;
 }
 
 /* NAV CONTENT */
@@ -68,13 +62,13 @@ nav {
     margin-bottom: 0px;
     background-color: var(--frontColor);
 }
-ul 
+nav ul 
 {
     margin: 0;
     padding: 0;
 }
 
-li 
+nav li, li 
 {
     list-style: none;
     align-self: center;
@@ -85,12 +79,22 @@ a
     color: #CAE9FF; 
 }
 
+
 /* MAIN CONTENT */
 main {
     grid-row: 3/4;
 }
 
-main>section>h3
+main h2 
+{
+    color: var(--frontColor);
+    border-style: none none solid none;
+    border-width: 5px;
+    border-color: var(--borderColor);
+    margin-bottom: 0px;
+}
+
+main section h3
 {
     display: inline-block;
     margin-top: 0;
