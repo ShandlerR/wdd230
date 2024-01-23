@@ -1,10 +1,65 @@
 :root
 {
+    --borderColor: #5FA8D3;
+    --textColor: #CAE9FF;
     --frontColor: #1B4965;
 }
 
 body
 {
-    color: #CAE9FF; 
+    color: var(--textColor); 
     background-color: #BEE9E8;
+    margin: 0 5%;
+    font-family: "Open Sans";
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+}
+
+/* HEADER */
+
+h1 
+{
+    color: var(--frontColor);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* MAIN/SECTION */
+
+section 
+{
+    background-color: var(--frontColor);
+    border: 5px solid var(--borderColor); 
+    padding: 5px 5%;
+    margin: 30px 0;
+    text-align: center;
+}
+
+h2
+{
+    background-color: var(--textColor);
+    color: var(--frontColor);
+    border: 5px solid var(--borderColor);
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+}
+
+a 
+{
+    color: var(--textColor);
+    opacity: 75%;
+    font-size: 0.80rem;
+}
+
+p
+{
+    border: 5px solid var(--borderColor); 
+    padding: 10px;
 }
