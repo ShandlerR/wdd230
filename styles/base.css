@@ -2,6 +2,7 @@
 {
     --borderColor: #5FA8D3;
     --frontColor: #1B4965;
+    --fontColor: #CAE9FF;
 }
 
 .roboto-condensed {
@@ -24,7 +25,7 @@ body
     justify-content: center;
     text-align: center;
     background-color: #BEE9E8;
-    color: #CAE9FF; 
+    color: var(--fontColor); 
     font-family: "Roboto Condensed";
 }
 
@@ -53,6 +54,49 @@ header img
 }
 
 /* NAV CONTENT */
+
+#menu
+{
+    font-size: 1.5rem; /* Basic Font Size will control the size of this menu (It is still text) */
+    background: none; /* So we can just use the background behind it, instead of needing to manange a new color*/
+    border: none; /* Buttons default to having a border for some reaosn */
+    color: var(--fontColor); /* So it can be read */
+    
+    display: block;
+
+    position: absolute;
+    top: 0.4rem;
+    right: 1rem;
+}
+
+
+/* The menu should only be displayed in the mobile view */
+@media screen and (max-width: 600px) 
+{
+
+    /* By default (until the closed tag exists), the menu shall display an X*/
+#menu:before 
+{
+    content: "X";
+}
+
+/* If the menu has the closed tag (Added through JS), change the display */
+
+#menu.closed::before 
+{
+    content: "☰";
+}
+/*
+   Initially, the ul is explicitly set to display as a block. "nav li, li" is the rule where we do this.
+   When the UL is requested to be closed, will it delete the display. 
+   */
+.closed ul 
+{
+    display: none;
+}
+
+}
+
 nav {
     grid-row: 2/3;
     list-style: none;
@@ -72,6 +116,7 @@ nav li, li
 {
     list-style: none;
     align-self: center;
+    display: block;
 }
 
 a 
