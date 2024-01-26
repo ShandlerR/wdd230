@@ -29,6 +29,12 @@ body
     font-family: "Roboto Condensed";
 }
 
+::selection
+{
+    color: var(--frontColor);
+    background-color: #62B6CB;
+}
+
 /* HEADER CONTENT */
 header 
 {
