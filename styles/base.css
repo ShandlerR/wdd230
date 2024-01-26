@@ -145,6 +145,13 @@ main h2
     margin-bottom: 0px;
 }
 
+iframe 
+{
+    width: 90%;
+    justify-self: center;
+    padding-top: 10px;
+}
+
 main section h3
 {
     display: inline-block;
