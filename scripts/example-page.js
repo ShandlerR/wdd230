@@ -4,4 +4,5 @@ function onClickEvent()
 {
     number ++;
     console.log(number);
+    error("SOMETHING HAPPENED!")
 }
