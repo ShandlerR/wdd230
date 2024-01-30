@@ -4,5 +4,5 @@ function onClickEvent()
 {
     number ++;
     console.log(number);
-    error("SOMETHING HAPPENED!")
+    console.warn("Something Spooky Happens here!")
 }
