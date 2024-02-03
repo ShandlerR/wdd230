@@ -2,3 +2,50 @@ img
 {
     width: 100%;
 }
+
+body
+{
+    grid-template-rows: auto auto auto;
+    padding: 5%;
+}
+
+/* HEADER Information */
+
+header
+{
+    text-align: center;
+}
+
+header section
+{
+    position: relative;
+} 
+
+h1 
+{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+header h2
+{
+    margin-top: 0%;
+    display: inline;
+    background-color: #E0E0E0;
+    padding: 0% 2%;
+}
+
+/* MAIN Information */
+
+main 
+{
+    display:grid; 
+    padding: 0% 5%;
+}
+
+nav 
+{
+    display: none;
+}
