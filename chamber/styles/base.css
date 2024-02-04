@@ -5,7 +5,6 @@ img
 
 body
 {
-    grid-template-rows: auto auto auto;
     padding: 5%;
 }
 
@@ -37,15 +36,86 @@ header h2
     padding: 1em 2em;
 }
 
+/* NAV INFORMATION */
+#menu 
+{
+    position: fixed;
+    top: 5%; 
+}
+
+@media screen and (max-width: 600px) 
+{
+
+    /* By default (until the closed tag exists), the menu shall display an X*/
+#menu:before 
+{
+    content: "X";
+}
+
+/* If the menu has the closed tag (Added through JS), change the display */
+
+#menu.closed::before 
+{
+    content: "☰";
+}
+/*
+   Initially, the ul is explicitly set to display as a block. "nav li, li" is the rule where we do this.
+   When the UL is requested to be closed, will it delete the display. 
+*/
+
+ul.closed
+{
+    display: none;
+}
+
+ul 
+{
+    position: fixed;
+    display: inline;
+    top: 10%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 2em;
+}
+
+#box.closed
+{
+    display: none;
+}
+
+#box
+{
+    display: inline;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    padding: 100% 20%;
+}
+}
+
 /* MAIN Information */
 
 main 
 {
-    display:grid; 
     padding: 0% 5%;
+    text-align: center;
 }
 
-nav 
+
+
+main button
 {
-    display: none;
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+/* FOOTER CONTENT */
+
+footer 
+{
+    text-align: center;
 }
