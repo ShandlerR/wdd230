@@ -1,121 +1,125 @@
-img 
+@media screen and (max-width: 600px)
 {
-    width: 100%;
-}
+    
+    /* WHOLE DOCUMENT CHANGES */
+    img 
+    {
+        width: 100%;
+    }
+    
+    body 
+    {
+        margin: 1em;
+        text-align: center;
+        border: 1px blue solid;
+    }
 
-body
-{
-    padding: 5%;
-}
+    /* NAV CHANGES */
+    
+    /* --Hamburger Menu-- */
 
-/* HEADER Information */
+    #menu.navMenuOpen::before
+    {
+        content: "X";
+    }
 
-header
-{
-    text-align: center;
-}
+    #menu::before 
+    {
+        content: "☰";
+    }
 
-header section
-{
-    position: relative;
-} 
+    #menu
+    {
+        position: fixed;
+        top: 1em;
+        left: 1em;   
+    }
 
-h1 
-{
-    position: absolute;
-    top: 20%;
-    width: 100%;
-    text-align: center;
-}
+    nav.navMenuOpen
+    {
+        display: block;
+    }
 
-header h2
-{
-    margin-top: 0%;
-    display: inline;
-    background-color: #E0E0E0;
-    padding: 1em 2em;
-}
+    /* --General Nav Data-- */
+    nav
+    {
+        display: none;
+        position: fixed;
+        background-color: grey;
+        height: 100%;
+        width: 30%;
+        font-size: 1.5em;
+        top: 0;
+        left: 0;
+    }
 
-/* NAV INFORMATION */
-#menu 
-{
-    position: fixed;
-    top: 5%; 
-}
+    ul
+    {
+        margin-top: 2em;
+        list-style: none;
+        padding-left: 0;
+    }
 
-@media screen and (max-width: 600px) 
-{
+    li 
+    {
+        margin: 1em 0;
+    }
 
-    /* By default (until the closed tag exists), the menu shall display an X*/
-#menu:before 
-{
-    content: "X";
-}
+    li #currentPage
+    {
+        color: yellow;
+    }
 
-/* If the menu has the closed tag (Added through JS), change the display */
+    /* HEADER */
 
-#menu.closed::before 
-{
-    content: "☰";
-}
-/*
-   Initially, the ul is explicitly set to display as a block. "nav li, li" is the rule where we do this.
-   When the UL is requested to be closed, will it delete the display. 
-*/
+    /* --Page Title section-- */
+    header section 
+    {
+        background-image: url("../images/placeholder.png");
+        padding: 2em;
+    }
 
-ul.closed
-{
-    display: none;
-}
+    /* --Temperature-- */
+    header h2
+    {
+        background-color: grey;
+        display: inline-block;
+        margin: 0;
+        padding: 0.5em 1em;
+    }
 
-ul 
-{
-    position: fixed;
-    display: inline;
-    top: 10%;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 2em;
-}
-
-#box.closed
-{
-    display: none;
-}
-
-#box
-{
-    display: inline;
-    position: fixed;
-    background-color: black;
-    top: 0;
-    left: 0;
-    padding: 100% 20%;
-}
-}
-
-/* MAIN Information */
-
-main 
-{
-    padding: 0% 5%;
-    text-align: center;
-}
+    /* MAIN CONTENT */
+    /* --Community Spotlight-- */
 
 
+    main section 
+    {
+        margin: 0 2em;
+    }
 
-main button
-{
-    display: block;
-    margin-left: auto;
-    margin-right: 0px;
-}
+    main section:not(#aboutUsSection)
+    {
+        background-image: url("../images/placeholder.png");
+        padding: 2em;
+    }
 
-/* FOOTER CONTENT */
+    .displayPoint
+    {
+        display: inline;
+    }
 
-footer 
-{
-    text-align: center;
+    /* --About Us-- */
+
+    #aboutUsSection p:not(#aboutUsSection p:last-child)
+    {
+        padding-bottom: 2em;
+    }
+
+    /* FOOTER CONTENT */
+    footer 
+    {
+    background-color: grey;
+    margin-top: 1em;
+    padding: 0.2em 0;
+    }
 }
