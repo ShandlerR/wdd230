@@ -1,17 +1,22 @@
-@media screen and (max-width: 600px)
+/* base.Min-width = larger.Min-width = 0.001 */
+@media screen and (max-width: 46.875em)
 {
-    
-    /* WHOLE DOCUMENT CHANGES */
-    img 
+    /* HEADER */
+
+    /* --Page Title section-- */
+    header section 
     {
-        width: 100%;
+        background-image: url("../images/placeholder.png");
+        padding: 2em;
     }
-    
-    body 
+
+    /* --Temperature-- */
+    header h2
     {
-        margin: 1em;
-        text-align: center;
-        border: 1px blue solid;
+        background-color: grey;
+        display: inline-block;
+        margin: 0;
+        padding: 0.5em 1em;
     }
 
     /* NAV CHANGES */
@@ -53,40 +58,19 @@
         left: 0;
     }
 
-    ul
+    nav ul
     {
         margin-top: 2em;
         list-style: none;
         padding-left: 0;
     }
 
-    li 
+    nav li 
     {
         margin: 1em 0;
     }
 
-    li #currentPage
-    {
-        color: yellow;
-    }
-
-    /* HEADER */
-
-    /* --Page Title section-- */
-    header section 
-    {
-        background-image: url("../images/placeholder.png");
-        padding: 2em;
-    }
-
-    /* --Temperature-- */
-    header h2
-    {
-        background-color: grey;
-        display: inline-block;
-        margin: 0;
-        padding: 0.5em 1em;
-    }
+ 
 
     /* MAIN CONTENT */
     /* --Community Spotlight-- */
@@ -108,13 +92,5 @@
     #aboutUsSection p:not(#aboutUsSection p:last-child)
     {
         padding-bottom: 2em;
-    }
-
-    /* FOOTER CONTENT */
-    footer 
-    {
-    background-color: grey;
-    margin-top: 1em;
-    padding: 0.2em 0;
     }
 }

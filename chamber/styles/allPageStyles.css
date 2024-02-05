@@ -1,4 +1,31 @@
-.displayPoint
+/* DOCUMENT */
+img 
+{
+    width: 100%;
+}
+
+body 
+{
+    margin: 1em;
+    text-align: center;
+}
+
+/* NAVIGATION */
+nav li #currentPage
+{
+    color: yellow;
+}
+
+/* MAIN SECTION ARTICLE INDICATORS*/
+.currentImageIndicator
 {
     display: inline;
 }  
+
+/* FOOTER */
+footer 
+{
+    background-color: grey;
+    margin-top: 1em;
+    padding: 0.2em 0;
+}
