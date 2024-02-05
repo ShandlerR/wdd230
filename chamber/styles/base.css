@@ -100,12 +100,7 @@
     main section:not(#aboutUsSection)
     {
         background-image: url("../images/placeholder.png");
-        padding: 2em;
-    }
-
-    .displayPoint
-    {
-        display: inline;
+        padding: 1em;
     }
 
     /* --About Us-- */
