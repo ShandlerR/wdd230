@@ -63,7 +63,7 @@
     main section p:not(#aboutUsSection p) 
     {
         /* Force Section Boxes to always be reasonable sizes */
-        min-height: 7em
+        min-height: 15em;
     }
 
     /* --All Grid Data-- */
