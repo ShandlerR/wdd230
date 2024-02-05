@@ -185,3 +185,12 @@
         grid-row: 5/6;
     }
 }
+
+/* Small changes for Largest View */
+@media screen and (min-width: 68.75em)
+{
+    header h2 
+    {
+        text-align: center;
+    }
+}
