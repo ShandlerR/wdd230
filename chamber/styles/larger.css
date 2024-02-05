@@ -1,0 +1,69 @@
+@media screen and (min-width: 600px)
+{
+    /* DOCUMENT */
+    
+    img 
+    {
+        width: 100%;
+    }
+
+    body 
+    {
+        margin: 1em;
+    }
+
+    /* HEADER */
+    header
+    {
+        background-image: url("../images/placeholder.png");
+    }
+
+    header h1
+    {
+        /* required styles */
+        margin: 0;
+
+        /* pretty styles */
+        padding-top: 0.25em;
+        padding-left: 0.5em;
+    }
+
+    header h2
+    {
+        /* required styles */
+        text-align: right;
+        padding-top: 0;
+        margin: 0;
+
+        /* pretty styles */
+        padding-right: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    /* NAVIGATION */
+    nav ul
+    {
+        /* required styles */
+        background-color: grey;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding-left: 0;
+        padding-right: 0;
+        
+        /* Pretty Styles */
+        margin: 0;
+        padding: 1em 0;
+        font-size: 1.2em;
+    }
+
+    #currentPage
+    {
+        color: yellow;
+    }
+
+    #menu
+    {
+        display: none;
+    }
+}
