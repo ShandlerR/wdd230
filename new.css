@@ -1,0 +1,21 @@
+img 
+{
+  width: 30%;
+}
+
+.gridlayout {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: .25rem;
+  }
+
+  .item {
+    grid-column: 2/3;
+  }
+
+
+.imgitem
+{
+    grid-row: 1/4;
+}
