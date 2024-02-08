@@ -56,19 +56,21 @@ nav a:hover
 nav a
 {
     color: var(--textColor);
-}
+}  
 
-/* MAIN SECTION ARTICLE ARROWS */
+/* MAIN */
+/* main section article arrows */
 .currentImageIndicator
 {
     display: inline;
-}  
+}
 
+/* the rest of main */
 
-/* MAIN SECTION COLORS */
 main section:not(#aboutUsSection)
 {
     color: black;
+    background-color: none;
 }
 
 #aboutUsSection 
@@ -76,7 +78,6 @@ main section:not(#aboutUsSection)
     border: var(--generalBorder);
 }
 
-/* MAIN BUTTON PADDING */
 #buttonContainer
 {
     margin-top: 1em;
