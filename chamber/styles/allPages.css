@@ -1,3 +1,19 @@
+:root 
+{
+    /* page colors */
+    --darkGreen: #324332;
+    --textColor: #a6ed92;
+    
+    /* Links */
+    --hoverColor: #f3d3f1;
+
+    /* Border Info */
+    --borderColor: #488B49;
+    --generalBorder: 0.25em solid var(--borderColor);
+    
+}
+
+
 /* DOCUMENT */
 img 
 {
@@ -8,24 +24,68 @@ body
 {
     margin: 1em;
     text-align: center;
+    background-color: var(--darkGreen);
+    color: var(--textColor);
 }
 
-/* NAVIGATION */
+/* ALL HEADERS */
+
+header h1 
+{
+    color: black;
+}
+
+header h2 
+{
+    background-color: var(--darkGreen);
+    color: var(--brightGreen);
+}
+
+/* ALL NAVIGATIONS */
+
 nav li #currentPage
 {
-    color: yellow;
+    color: var(--hoverColor);
 }
 
-/* MAIN SECTION ARTICLE INDICATORS*/
+nav a:hover
+{
+    color: var(--hoverColor);
+}
+
+nav a
+{
+    color: var(--textColor);
+}
+
+/* MAIN SECTION ARTICLE ARROWS */
 .currentImageIndicator
 {
     display: inline;
 }  
 
+
+/* MAIN SECTION COLORS */
+main section:not(#aboutUsSection)
+{
+    color: black;
+}
+
+#aboutUsSection 
+{
+    border: var(--generalBorder);
+}
+
+/* MAIN BUTTON PADDING */
+#buttonContainer
+{
+    margin-top: 1em;
+}
+
 /* FOOTER */
 footer 
 {
-    background-color: grey;
     margin-top: 1em;
     padding: 0.2em 0;
+    border: var(--generalBorder);
 }

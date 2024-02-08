@@ -6,17 +6,25 @@
     /* --Page Title section-- */
     header section 
     {
-        background-image: url("../images/placeholder.png");
+        background-image: url("../images/stroudsburg-head-image.jpg");
         padding: 2em;
+    }
+
+    header h1 
+    {
+        background-color: var(--darkGreen);
+        color: var(--brightGreen);
+        border: var(--generalBorder);
     }
 
     /* --Temperature-- */
     header h2
     {
-        background-color: grey;
         display: inline-block;
         margin: 0;
         padding: 0.5em 1em;
+        border: var(--generalBorder);
+        border-top: 0;
     }
 
     /* NAV CHANGES */
@@ -92,5 +100,6 @@
     #aboutUsSection p:not(#aboutUsSection p:last-child)
     {
         padding-bottom: 2em;
+        border-bottom: var(--generalBorder);
     }
 }
