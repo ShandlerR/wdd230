@@ -1,7 +1,7 @@
 :root 
 {
     /* page colors */
-    --darkGreen: #324332;
+    --backgroundColor: #324332;
     --textColor: #a6ed92;
     
     /* Links */
@@ -10,7 +10,20 @@
     /* Border Info */
     --borderColor: #488B49;
     --generalBorder: 0.25em solid var(--borderColor);
-    
+}
+
+:root .lightMode
+{
+    /* page colors */
+    --backgroundColor: #a6ed92;
+    --textColor: #0c4f11;
+
+    /* Links */
+    --hoverColor: #2216d0;
+
+    /* Border Info */
+    --borderColor: var(--textColor);
+    --generalBorder: 0.25em solid var(--borderColor);
 }
 
 
@@ -24,8 +37,31 @@ body
 {
     margin: 1em;
     text-align: center;
-    background-color: var(--darkGreen);
+    background-color: var(--backgroundColor);
     color: var(--textColor);
+}
+
+/* light Mode Button */
+#lightModeToggle
+{
+    position: fixed;
+    font-size: 2em;
+    top: 0.5em;
+    right: 0.5em;   
+    background: var(--backgroundColor);
+    border-color: var(--borderColor);
+    
+    color: var(--textColor);
+}
+
+#lightModeToggle:not(#lightModeToggle.lightMode)::before
+{
+    content: "◙";
+}
+
+button.lightMode::before
+{
+    content: "☼";
 }
 
 /* ALL HEADERS */
@@ -37,7 +73,7 @@ header h1
 
 header h2 
 {
-    background-color: var(--darkGreen);
+    background-color: var(--backgroundColor);
     color: var(--brightGreen);
 }
 

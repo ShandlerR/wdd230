@@ -12,7 +12,7 @@
 
     header h1 
     {
-        background-color: var(--darkGreen);
+        background-color: var(--backgroundColor);
         color: var(--brightGreen);
         border: var(--generalBorder);
     }
@@ -46,6 +46,8 @@
         position: fixed;
         top: 1em;
         left: 1em;   
+        background: var(--backgroundColor);
+        border-color: var(--borderColor);
     }
 
     nav.navMenuOpen
@@ -58,7 +60,7 @@
     {
         display: none;
         position: fixed;
-        background-color: var(--darkGreen);
+        background-color: var(--backgroundColor);
         border: var(--generalBorder);
         height: 100%;
         width: 30%;
