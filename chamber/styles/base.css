@@ -58,7 +58,8 @@
     {
         display: none;
         position: fixed;
-        background-color: grey;
+        background-color: var(--darkGreen);
+        border: var(--generalBorder);
         height: 100%;
         width: 30%;
         font-size: 1.5em;
