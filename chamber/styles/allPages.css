@@ -26,6 +26,10 @@
     --generalBorder: 0.25em solid var(--borderColor);
 }
 
+button:not(main button)
+{
+    color: var(--textColor);
+}
 
 /* DOCUMENT */
 img 
