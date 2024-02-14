@@ -6,7 +6,7 @@
     /* --Page Title section-- */
     header section 
     {
-        background-image: url("../images/stroudsburg-head-image.jpg");
+        background-image: var(--bannerImg);
         padding: 2em;
     }
 

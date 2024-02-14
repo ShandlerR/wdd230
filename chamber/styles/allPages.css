@@ -4,13 +4,16 @@
     --backgroundColor: #324332;
     --textColor: #a6ed92;
     
-    /* Links */
+    --bannerImg: url("../images/stroudsburg-head-image.webp");
+
+    /* Link colors */
     --hoverColor: #f3d3f1;
 
     /* Border Info */
     --borderColor: #488B49;
     --generalBorder: 0.25em solid var(--borderColor);
 }
+
 
 :root .lightMode
 {
@@ -45,7 +48,7 @@ body
     color: var(--textColor);
 }
 
-/* light Mode Button */
+/* LIGHT MODE BUTTON */
 #lightModeToggle
 {
     position: fixed;
