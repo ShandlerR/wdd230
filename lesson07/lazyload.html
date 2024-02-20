@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Demonstration</title>
+    
+    <meta name="author" content="Shandler Rechenberger">
+    <meta name="description" content="My demonstration of understanding lazy loading.">
+
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Loading Demonstration</h1>
+    </header>
+    <main>
+        <img loading="lazy" src="http://placekitten.com/g/100/200" alt="A placeholder kitten image" height="800" width="400">
+        <img loading="lazy" src="http://placekitten.com/g/200/400" alt="A placeholder kitten image" height="800" width="400">
+        <img loading="lazy" src="http://placekitten.com/g/300/600" alt="A placeholder kitten image" height="800" width="400">
+        <img loading="lazy" src="https://loremflickr.com/100/200" alt="A placeholder kitten image" height="800" width="400">
+        <img loading="lazy" src="https://loremflickr.com/200/400" alt="A placeholder kitten image" height="800" width="400">
+        <img loading="lazy" src="https://loremflickr.com/300/600" alt="A placeholder kitten image" height="800" width="400">
+    </main>
+    <footer>
+        <p>Last Modified: <span id="modDate">1/1/01 12:00:00</span></p>
+    </footer>
+
+    <script src="scripts/lazyload.js"></script>
+</body>
+
+</html>
