@@ -2,7 +2,6 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const ul = document.querySelector("#list");
 
-
 button.addEventListener
 (
     "click", function() 
@@ -29,6 +28,7 @@ function displayList(item)
     (
         "click", function()
         {
+            deleteChapter(deleteButton.parentElement.textContent);
             item = "";
             input.focus();
             deleteButton.parentElement.remove();
