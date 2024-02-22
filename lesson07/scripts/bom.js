@@ -10,7 +10,7 @@ button.addEventListener
         if(input.value != "")
         {
             displayList(input.value);
-            chapterArray.append(input.value);
+            chapterArray.push(input.value);
             setChapterList();
             input.value = "";
             input.focus();
