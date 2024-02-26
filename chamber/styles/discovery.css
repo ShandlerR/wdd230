@@ -34,9 +34,12 @@
         display: block;
     }
 
-    picture p
+    main #rightPane p
     {
-        position: absolute;
-        color: orange !important;
+        position: relative;
+        display: inline;
+        top: -11em;
+        padding: 0.2em;
+        background-color: var(--backgroundColor);
     }
 }
