@@ -1,4 +1,26 @@
-@media screen and (max-width: 46.875em)
+@media screen and (min-width: 46.876em)
 {
-    
+    main 
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main #leftPane, main #leftPane section, main #rightPane, main #rightPane section
+    {
+        
+        background-image: none;
+        color: orange;
+    }
+
+
+    main #leftPane 
+    {
+        
+    }
+
+    main #rightPane
+    {
+
+    }
 }
