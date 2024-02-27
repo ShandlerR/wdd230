@@ -160,3 +160,13 @@ main #rightPane p
     padding: 0.2em;
     background-color: var(--backgroundColor);
 }
+
+main #rightPane img 
+{
+    filter: blur(2px);
+}
+
+main #rightPane img:hover 
+{
+    filter: blur(0);
+}
