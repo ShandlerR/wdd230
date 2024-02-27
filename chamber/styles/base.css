@@ -105,4 +105,10 @@
         padding-bottom: 2em;
         border-bottom: var(--generalBorder);
     }
+
+    
+    main #rightPane p
+    {
+        top: -5em;
+    }
 }

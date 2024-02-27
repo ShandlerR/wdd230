@@ -133,3 +133,30 @@ footer
     padding: 0.2em 0;
     border: var(--generalBorder);
 }
+
+
+main #leftPane, main #leftPane section, main #rightPane, main #rightPane section
+{
+    
+    background-image: none !important;
+    color: var(--textColor) !important;
+}
+
+main #leftPane p, main #rightPane p 
+{
+    min-height: auto !important;        
+}
+
+
+main #leftPane section, main #rightPane section
+{
+    display: block;
+}
+
+main #rightPane p
+{
+    position: relative;
+    display: inline;
+    padding: 0.2em;
+    background-color: var(--backgroundColor);
+}
