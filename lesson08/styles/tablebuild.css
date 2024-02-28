@@ -1,0 +1,9 @@
+th, td {
+	padding: 7px 15px;
+	border: 1px solid orange;
+}
+
+caption
+{
+    caption-side: bottom;
+}
