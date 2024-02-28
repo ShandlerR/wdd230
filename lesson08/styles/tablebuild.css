@@ -1,7 +1,52 @@
-th, td {
-	padding: 7px 15px;
-	border: 1px solid orange;
+table 
+{
+	border-collapse: collapse;
 }
+
+thead
+{
+	color: white;
+}
+
+thead th:first-child
+{
+	background-color: black;
+	border: 1px solid black;
+	border-top-style: none;
+	padding: 7px 15px;
+}
+
+thead th:not(thead th:first-child) 
+{
+	border: 1px solid #2E2E2E;
+	border-top-style: none;
+	padding: 7px 15px;
+	background-color: #333333;
+} 
+
+tbody tr:first-child
+{
+	border: 1px solid #E5E5E5;
+	border-top: none;
+}
+
+tbody tr:not(tbody tr:first-child)
+{
+	border: 1px solid #E5E5E5;
+}
+
+tbody td 
+{
+	border: 1px solid #E5E5E5;
+	border-top-style: none;
+	border-bottom-style: none;
+}
+
+tbody tr:nth-child(odd)
+{
+	background-color: #EEEEEE;
+}
+
 
 caption
 {
