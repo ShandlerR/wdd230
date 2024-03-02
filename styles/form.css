@@ -22,7 +22,7 @@ label:last-child
     margin-bottom: var(--margin);
 }
 
-label, span
+label, div
 {
     font-size: var(--fontSize);
 }
