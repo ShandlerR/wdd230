@@ -1,0 +1,41 @@
+:root 
+{
+    --margin: 10px;
+    --height: 44px;
+    --fontSize: 1.5em;
+
+}
+
+#username, #password, #rPassword, #email
+{
+    display: block;
+}
+
+label
+{
+    display: block;
+    margin-top: var(--margin);
+}
+
+label:last-child
+{
+    margin-bottom: var(--margin);
+}
+
+label 
+{
+    font-size: var(--fontSize);
+}
+
+label input 
+{
+    height: var(--height);
+    width: 100%;
+    max-width: 400px;
+}
+
+input
+{
+    font-size: var(--fontSize);
+    height: var(--height);
+}
