@@ -23,9 +23,12 @@
                 <label>Username*: <input type="text" name="username" id="username" required></label>
                 <label>Password*: <input type="password" name="password" id="password" pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$" required></label>
                 <label>Repeat Password*: <input type="password" name="password" id="rPassword"></label>
+                <label title="A valid BYUI email address">Email*: <input type="email" name="email" id="email" pattern="^.*@byui\.edu$" required></label>
             </fieldset>
 
-            
+            <fieldset>
+                <label>Rating: <input type="rating" id="rating" name="rating"></label>
+            </fieldset>
 
             <input type="submit" value="Submit Button Example">
         </form>
