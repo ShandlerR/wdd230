@@ -11,7 +11,7 @@
     display: block;
 }
 
-label
+label:not(.ratingLabel)
 {
     display: block;
     margin-top: var(--margin);
@@ -22,7 +22,7 @@ label:last-child
     margin-bottom: var(--margin);
 }
 
-label 
+label, span
 {
     font-size: var(--fontSize);
 }
