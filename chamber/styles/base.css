@@ -17,6 +17,11 @@
         border: var(--generalBorder);
     }
 
+    #costDisplaySection
+    {
+        display: none;
+    }
+
     /* --Temperature-- */
     header h2
     {
