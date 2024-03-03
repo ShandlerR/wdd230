@@ -73,19 +73,21 @@
             </fieldset>
 
             <fieldset>
+                <legend>Requested Membership Level</legend>
+                <label class="radioButtons"><input type="radio" name="membership" value="npMember" required>Non-Profit Membership</label>
+                <label class="radioButtons"><input type="radio" name="membership" value="bronzeMember">Bronze Membership</label>
+                <label class="radioButtons"><input type="radio" name="membership" value="silverMember">Silver Membership</label>
+                <label class="radioButtons"><input type="radio" name="membership" value="goldMember">Gold Membership</label>
+            </fieldset>
+            
+            <fieldset>
                 <legend>Organization Information</legend>
                 <label>Organization Name*: <input type="text" name="orgName" id="orgName" required></label>
-                <label>Organization Description: <input type="textarea" name="desc" id="desc"></label>
                 <label>My Title*: <input type="text" name="title" id="title" required pattern="^[a-zA-Z -]{7,}$"></label>
+                <label>Organization Description: <textarea name="desc" id="desc" cols="30" rows="10"></textarea> </label>
             </fieldset>
 
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label class="memL"><input type="radio" name="membership" value="npMember" required>Non-Profit Membership</label>
-                <label class="memL"><input type="radio" name="membership" value="bronzeMember">Bronze Membership</label>
-                <label class="memL"><input type="radio" name="membership" value="silverMember">Silver Membership</label>
-                <label class="memL"><input type="radio" name="membership" value="goldMember">Gold Membership</label>
-            </fieldset>
+            
 
             <label><input type="hidden" name="date" id="date"></label>
 

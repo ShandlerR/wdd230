@@ -59,6 +59,10 @@
     margin-bottom: 10px;
 }
 
+fieldset textarea 
+{
+    width:100%;
+}
 
 fieldset
 {
@@ -77,9 +81,16 @@ form legend
     text-align: center;
 }
 
-label
+label:not(label:first-child)
 {
     max-width: 400px;
+    margin-top: 20px;
+    display: block;
+}
+
+label:last-child
+{
+    margin-bottom: 20px;
 }
 
 input:not(input[type="radio"]) 
@@ -96,7 +107,12 @@ form>input
     color: var(--backgroundColor);
 }
 
-.memL
+input[type="radio"]
+{
+    margin-right: 10px;
+}
+
+.radioButtons
 {
     display: block;
 }
