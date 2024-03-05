@@ -1,0 +1,27 @@
+#cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: #B9B9CC;
+    border: black 1px solid;
+}
+
+#cards section 
+{
+    border: black 1px dashed;
+    padding-bottom: 50px;
+}
+
+h1, h2 
+{
+    color: #4D4D96;
+}
+
+
+
+body 
+{
+    text-align: center;
+    font-family: "Modimi One", sans-serif;
+}
+
