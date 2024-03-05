@@ -1,0 +1,27 @@
+{
+    "Smith": 
+    {
+        "familyName": "Smith",
+        "date": "2022-03-15",
+        "familyMemberCount": 3,
+        "visited": false,
+        "familyMembers": 
+        [
+            {
+                "name": "John",
+                "gender": "Male",
+                "birthdate": "1950-01-01"
+            },
+            {
+                "name": "Barbara",
+                "gender": "Female",
+                "birthdate": "1950-05-17"
+            },
+            {
+                "name": "Jimmy",
+                "gender": "Male",
+                "birthdate": "2000-12-01"
+            }
+        ]
+    }
+}
