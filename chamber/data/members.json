@@ -1,0 +1,61 @@
+{
+    "Companies": 
+    [
+        {
+            "Name": "Albertsons Companies",
+            "Address": "Boise, ID 83713",
+            "Phone": "555-555-5552",
+            "URL": "https://www.albertsons.com/",
+            "IMG": "",
+            "Membership": "Gold"
+        },
+        {
+            "Name": "Boise Cascade",
+            "Address": "Idaho Falls, ID 83402",
+            "Phone": "208-522-6564",
+            "URL": "https://www.bc.com/",
+            "IMG": "",
+            "Membership": "Silver"
+        },
+        {
+            "Name": "Hecla Mining Company",
+            "Address": "Clayton, ID 83227",
+            "Phone": "208-838-2461",
+            "URL": "https://www.hecla.com/",
+            "IMG": "",
+            "Membership": "Bronze"
+        },
+        {
+            "Name": "Idaho Central Credit Union",
+            "Address": "Chubbuck, ID 83202",
+            "Phone": "800-456-5067",
+            "URL": "www.iccu.com",
+            "IMG": "",
+            "Membership": "Non-Profit"
+        },
+        {
+            "Name": "Idaho Power",
+            "Address": "Boise, ID 83707",
+            "Phone": "800-488-6151",
+            "URL": "https://www.idahopower.com/",
+            "IMG": "",
+            "Membership": "Gold"
+        },
+        {
+            "Name": "Micron Technology",
+            "Address": "Boise ID 83701",
+            "Phone": "555-555-5551",
+            "URL": "https://www.micron.com/",
+            "IMG": "",
+            "Membership": "Bronze"
+        },
+        {
+            "Name": "Native American Services Corp.",
+            "Address": "Kellog, ID 83837",
+            "Phone": "208-783-0361",
+            "URL": "https://www.nascousa.com/",
+            "IMG": "",
+            "Membership": "Silver"
+        }
+    ]
+}
