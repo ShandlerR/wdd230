@@ -76,6 +76,7 @@ form
     text-align: left;
 }
 
+/* Directory Page*/
 #cards img 
 {
     background-color: white;
@@ -86,6 +87,35 @@ form
 {
     background-color: white !important;
 }
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.list 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.list div 
+{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 0.5fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list div img 
+{
+    display: none;
+}
+
+
+/* Join Page */
 
 form legend
 {
