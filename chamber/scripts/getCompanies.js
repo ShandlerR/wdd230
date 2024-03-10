@@ -1,3 +1,6 @@
+
+// Companies Logic
+
 const url = "data/members.json"
 const cardsParent = document.querySelector("#cards");
 

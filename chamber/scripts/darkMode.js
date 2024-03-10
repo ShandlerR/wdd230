@@ -1,3 +1,4 @@
+// Dark Mode Interactions
 const button = document.querySelector("#lightModeToggle");
 
 const body = document.querySelector("body");
