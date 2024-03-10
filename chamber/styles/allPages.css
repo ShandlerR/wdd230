@@ -76,6 +76,17 @@ form
     text-align: left;
 }
 
+#cards img 
+{
+    background-color: white;
+}
+
+/* Boise Cascade Logo */
+.aCard:nth-child(2) img 
+{
+    background-color: white !important;
+}
+
 form legend
 {
     text-align: center;
