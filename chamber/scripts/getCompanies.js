@@ -27,7 +27,7 @@ function setDisplay(array)
         cardsParent.appendChild(card);
 
         // Create and set the Title
-        const titleElement = document.createElement("p");
+        const titleElement = document.createElement("h2");
         titleElement.textContent = company.Name;
 
         // Create and set the Picture
