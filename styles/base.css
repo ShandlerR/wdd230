@@ -74,6 +74,15 @@ header img
     right: 1rem;
 }
 
+#weather
+{
+    display: inline;
+}
+
+.card div 
+{
+    margin-bottom: 40px;
+}
 
 /* The menu should only be displayed in the mobile view */
 @media screen and (max-width: 600px) 
