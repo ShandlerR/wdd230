@@ -23,14 +23,13 @@
 
 </head>
 <body>
-    
     <header>
         <!-- Hero Image -->
         <section>
             <h1>Stroudsburg Chamber of Commerce</h1>
         </section>
         <h2>
-            <span id="temp">49.1</span>° F <br>
+            <span id="temp">49.1</span>&deg;F - <span id="desc"></span><br>
             <span id="windSpeed">10</span> mph <br>
             <span id="windChill"> </span> 
         </h2>
@@ -46,6 +45,8 @@
     <button aria-label="Hamburger Menu Button" id="menu"></button>
     <button id="lightModeToggle"></button>
     <!-- ◙ -->
+    <h2>12:00pm in three days will be: </h2>
+    <span id="threeDays"></span>
 
     <picture>
         <source media="(max-width: 46.875em)" srcset="images/wdd230-org-small.webp">
@@ -53,7 +54,13 @@
         <img src="images/wdd230-org-large.webp" alt="A group of people chatting">
     </picture>
 
+    <div id="banner">
+        <h2>Join our Meet and Greet this Wednesday at 7:00pm!</h2>
+        <button id="bannerButton">X</button>
+    </div>
+
     <main>
+
         <!-- Spotlights -->
         <h2>Community Spotlight</h2>
         <section>
@@ -96,9 +103,11 @@
         <p>Last Modified: <span id="lastModified">01/13/2024 12:00:00</span></p>
     </footer>
 
+    <script src="scripts/weather.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/setDates.js"></script>
     <script src="scripts/darkMode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/banner.js"></script>
+    
 </body>
 </html>

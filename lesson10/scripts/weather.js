@@ -41,5 +41,4 @@ function displayResult(data)
     captionDesc.textContent = `${desc}`;
 }
 
-
 apiFetch();

@@ -59,6 +59,25 @@
     margin-bottom: 10px;
 }
 
+#banner 
+{
+    position: fixed;
+    top: 0;
+    background-color: var(--backgroundColor);
+    border: var(--generalBorder);
+    display: block;
+    width: 100%;
+}
+
+#banner button 
+{
+    position: absolute;
+    top:0;
+    right: 2em;
+    background-color: var(--textColor);
+    color: var(--backgroundColor);
+}
+
 fieldset textarea 
 {
     width:100%;
