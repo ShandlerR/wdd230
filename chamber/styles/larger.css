@@ -64,7 +64,7 @@
     main section p:not(#aboutUsSection p) 
     {
         /* Force Section Boxes to always be reasonable sizes */
-        min-height: 15em;
+        /* min-height: 15em; */
     }
 
     /* --All Grid Data-- */
@@ -97,7 +97,7 @@
         grid-column: 1/2;
         grid-row: 2/3;
 
-        background-image: url("../images/placeholder.png");
+        /* background-image: url("../images/placeholder.png"); */
     }
 
     /* --Local Events-- */
@@ -112,7 +112,7 @@
         grid-column: 2/3;
         grid-row: 2/3;
 
-        background-image: url("../images/placeholder.png");
+        /* background-image: url("../images/placeholder.png"); */
     }
 
     /* ABOUT US */

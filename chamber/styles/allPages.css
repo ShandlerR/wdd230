@@ -291,8 +291,8 @@ nav a
 
 main section:not(#aboutUsSection)
 {
-    color: black;
-    background-color: transparent;
+    color: var(--backgroundColor);
+    background-color: var(--textColor);
 }
 
 #aboutUsSection 

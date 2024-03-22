@@ -100,7 +100,7 @@
 
     main section:not(#aboutUsSection)
     {
-        background-image: url("../images/placeholder.png");
+        /* background-image: url("../images/placeholder.png"); */
         padding: 1em;
     }
 
