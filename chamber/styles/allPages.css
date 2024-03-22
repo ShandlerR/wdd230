@@ -6,6 +6,8 @@
     
     --bannerImg: url("../images/stroudsburg-head-image.webp");
 
+    --aboutUsImageColor: var(--textColor);
+
     /* Link colors */
     --hoverColor: #f3d3f1;
 
@@ -298,6 +300,11 @@ main section:not(#aboutUsSection)
 #aboutUsSection 
 {
     border: var(--generalBorder);
+}
+
+#aboutUsSection img
+{
+    background-color: var(--aboutUsImageColor);
 }
 
 #buttonContainer
