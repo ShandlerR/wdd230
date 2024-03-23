@@ -1,12 +1,12 @@
 
 // Companies Logic
 
-const url = "data/members.json"
+const dataUrl = "data/members.json"
 const cardsParent = document.querySelector("#cards");
 
 async function getData()
 {
-    const response = await fetch(url);
+    const response = await fetch(dataUrl);
     const data = await response.json();
 
     //console.table(data.Companies);

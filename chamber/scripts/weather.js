@@ -37,8 +37,10 @@ function displayData(today, futureForecast)
     desc.textContent = `${today.weather[0].description}`;
     windSpeed.textContent = `${today.wind.speed}`
 
-    threeDayForecast.innerHTML = `<h2>${futureForecast.main.temp}&deg;F </h2>`
-
+    if(threeDayForecast != null)
+    {
+        threeDayForecast.innerHTML = `<h2>${futureForecast.main.temp}&deg;F </h2>`
+    }
     findWindChill();
 }
 
