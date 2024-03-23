@@ -30,7 +30,7 @@ function setDisplay(array)
 
         // Create and set the Picture
         const pictureElement = document.createElement("img");
-        pictureElement.setAttribute("src", `images/companies/${company.IMGName}`);
+        pictureElement.setAttribute("src", `images/Companies/${company.IMGName}`);
         pictureElement.setAttribute("alt", `A picture of ${company.Name}'s Logo.`)
         pictureElement.setAttribute("loading", "lazy");
 
