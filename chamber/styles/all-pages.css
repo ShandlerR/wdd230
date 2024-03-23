@@ -364,8 +364,3 @@ main #rightPane img
 {
     filter: blur(2px);
 }
-
-main #rightPane img:hover 
-{
-    filter: blur(0);
-}
