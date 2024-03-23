@@ -75,6 +75,11 @@
         left: 0;
     }
 
+    #cards:not(#cards.grid) p:nth-child(1), #cards:not(#cards.grid) p:nth-child(3)
+    {
+        display: none;
+    }
+
     nav ul
     {
         margin-top: 2em;
