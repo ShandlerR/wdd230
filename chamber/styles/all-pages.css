@@ -337,6 +337,7 @@ main #leftPane, main #leftPane section, main #rightPane, main #rightPane section
 {
     
     background-image: none !important;
+    background-color: var(--backgroundColor) !important;
     color: var(--textColor) !important;
 }
 
