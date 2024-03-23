@@ -61,12 +61,6 @@
         padding: 1em;
     }
 
-    main section p:not(#aboutUsSection p) 
-    {
-        /* Force Section Boxes to always be reasonable sizes */
-        /* min-height: 15em; */
-    }
-
     /* --All Grid Data-- */
     main 
     {
