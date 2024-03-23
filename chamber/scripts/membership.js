@@ -14,8 +14,6 @@ allItems[3].addEventListener("change", function () { setDisplay( "Gold Tier", 50
 
 function setDisplay(name, price, featureListSegment)
 {
-    console.log("triggered successful!");
-
     const headerLabel = display.querySelector("h3");
     const featuresLabel = display.querySelector("ul");
     const priceLabel = display.querySelector("p");

@@ -21,7 +21,6 @@ else // This is a return Visit!
 {
     const secondsSinceVisit = Math.abs(Date.now() - lastVisit)/1000;
     const daysSinceLastVisit = Math.floor((((secondsSinceVisit/60)/60)/24)); // seconds -> Minute -> hours -> days
-    console.log(`${secondsSinceVisit}s since last visit.`);
     
     if(daysSinceLastVisit < 1) // Just returned after a short leave
     {

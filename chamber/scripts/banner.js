@@ -13,5 +13,3 @@ if (currentDay.getDay() > 3)
 }
 
 bannerButton.addEventListener("click", hideBanner);
-
-console.log("THE DAY TODAY IS", currentDay.getDay());

@@ -1,7 +1,7 @@
 
 // Companies Logic
 
-const url = "data/members.json"
+const memUrl = "data/members.json"
 const card = document.querySelector("#spotlight");
 const title = card.querySelector("h3");
 
@@ -14,7 +14,7 @@ const addressSection = pTags[3];
 
 async function getData()
 {
-    const response = await fetch(url);
+    const response = await fetch(memUrl);
     const data = await response.json();
 
     //console.table(data.Companies);

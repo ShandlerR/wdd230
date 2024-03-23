@@ -52,10 +52,6 @@ function main()
     {
         windChillContainer.textContent = `${fillerTextBefore}${windChill.toFixed(2)}${fillerTextAfter}`
     }
-
-    console.log(windChill);
-    console.log(temperatureContainer.textContent);
-    console.log(windSpeedContainer.textContent);
 }
 
 main();

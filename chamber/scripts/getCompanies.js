@@ -19,8 +19,6 @@ function setDisplay(array)
 {
     for(const company of array)
     {
-        console.log(company.Name);
-
         // Create the Parent Div Class
         const card = document.createElement("div");
         card.setAttribute("class", "aCard");

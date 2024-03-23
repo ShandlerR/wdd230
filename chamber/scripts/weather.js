@@ -17,7 +17,6 @@ async function apiFetch()
 {
     const response = await fetch(url);
     const data = await response.json();
-    // console.log(data);
 
     today = new Date();
     today.setHours(12);
@@ -26,10 +25,6 @@ async function apiFetch()
     today.setDate(today.getDate() + 3);
 
     let unixDateSeconds = Math.floor(today.valueOf() / 1000);
-
-    // console.log(data["list"]);
-
-    // findData(unixDateSeconds, data["list"]);
 
     displayData(data["list"][0], findData(unixDateSeconds, data["list"]))
 }
@@ -49,7 +44,6 @@ function displayData(today, futureForecast)
 
 function findData(unixDate, objArray)
 {
-    console.log(objArray[0]["dt"]);
     let result = null;
     
     for(let i = 0; i < objArray.length; i++)
@@ -93,10 +87,6 @@ function findWindChill()
     {
         windChill.textContent = `${fillerTextBefore}${windChillValue.toFixed(2)}${fillerTextAfter}`
     }
-
-    console.log(windChillValue);
-    console.log(temperature.textContent);
-    console.log(windSpeed.textContent);
 }
 
 

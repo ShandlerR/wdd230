@@ -199,6 +199,7 @@ input[type="radio"]
 
 #costDisplaySection
 {
+    background-color: var(--backgroundColor) !important;
     background-image: none;
     color: var(--textColor) !important;
     border: var(--generalBorder);
@@ -265,6 +266,11 @@ nav
     z-index: 1;
 }
 
+nav a 
+{
+    font-size: 1.5em;
+}
+
 /* ALL NAVIGATIONS */
 
 nav li #currentPage
@@ -310,6 +316,12 @@ main section:not(#aboutUsSection)
 #buttonContainer
 {
     margin-top: 1em;
+    min-height: 44px;
+}
+
+#buttonContainer button 
+{
+    min-height: 44px;
 }
 
 /* FOOTER */
