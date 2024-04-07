@@ -1,0 +1,55 @@
+:root 
+{
+    --mainColor: #ffb3f1;
+    --backgroundColor: #2b3D41; 
+}
+
+/* Whole page styling */
+
+body 
+{
+    background-color: var(--backgroundColor);
+    color: var(--mainColor);
+    margin: 0 3rem;
+}
+
+img 
+{
+    width: 80%;
+}
+
+/* Header Stling */
+header 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header div
+{
+    background-color: var(--backgroundColor);
+    position: absolute;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+header img 
+{
+    width: 100%;
+    min-height: 8.625em;
+}
+
+/* Nav Styling */
+nav ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+a 
+{
+    color: var(--mainColor);
+}
