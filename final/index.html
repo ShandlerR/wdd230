@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-
     <!-- Basic HTML Details -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,8 +15,76 @@
     <meta property="og:image" content="https://shandlerr.github.io/wdd230/final/images/head-image.jpg">
     <meta property="og:url" content="https://shandlerr.github.io/wdd230/final/">
 
+    <!-- CSS Links and Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <header>
+        <h1>Bountiful Foods</h1>
+        <h2>Orders Made: <span id="orders"></span></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a id="current" href="#">Home</a></li>
+            <li><a href="order.html">Order a Drink</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>CarlsBad, California</h2>
+        <section>
+            <img src="images/beach-opt.jpg" alt="A southern California Tropical Beach" loading="lazy">
+            <p>Southern California boasts some of the world's most iconic surf spots, attracting wave riders from around the globe. From the renowned breaks of Malibu and Huntington Beach to the hidden
+                 gems of San Onofre and Trestles, the region's diverse coastline offers waves for every skill level. With its year-round sunshine and consistent swells, Southern California remains a 
+                 mecca for surfers seeking the ultimate wave-riding experience.</p>
+    </section>
+        <section>
+            <img src="images/restraunts.jpg" alt="A Californian Tropical Restraunt" loading="lazy">
+            <p>Southern California's rich tapestry of cultures makes it a vibrant and dynamic region. From the historic Mexican heritage of Olvera Street in Los Angeles to the thriving Asian 
+                communities of San Gabriel Valley, the area is a mosaic of traditions, languages, and cuisines. Whether exploring the vibrant street art of Boyle Heights or savoring authentic 
+                dim sum in Monterey Park, visitors can immerse themselves in the multicultural fabric that defines Southern California's unique identity.</p>
+        </section>
+
+        <h2>Weather Forecast</h2>
+        <section>
+            <p id="date"></p>
+            <p id="time"></p>
+            <p id="weather"></p>
+        </section>
+        <section id="weather-cards"></section>
+
+        <button>Try Now!</button>
+    </main>
     
+    <footer>
+
+        <div><p>Last Modified: <span id="mod"></span></p></div>
+
+        <div>
+            <img src="images/facebook.png" alt="facebook Logo" loading="lazy">
+            <img src="images/instagram.png" alt="instagram Logo" loading="lazy">
+            <img src="images/twitter.png" alt="twitter Logo" loading="lazy">
+        </div>
+
+        <div>
+            <p>12:00AM - 2:00PM</p>
+            <p>(123) - 123- 1234</p>
+        </div>
+
+        <div>
+            <p>274 Carlsbad road,<br>ABC California</p>
+        </div>
+
+        <div>
+            <ul>
+                <li>chatGPT</li>
+                <li>www.fruityvice.com</li>
+                <li>openweathermap.org</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
