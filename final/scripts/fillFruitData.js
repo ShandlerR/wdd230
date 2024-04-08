@@ -24,8 +24,6 @@ async function main()
 
     const data = await getData(dataUrl);
 
-    console.log(data);
-
     for(const fruit of data)
     {
         createOption(fruit.name, firstSelect);

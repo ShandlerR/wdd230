@@ -9,7 +9,6 @@ async function apiFetch()
     const response = await fetch(url);
     const data = await response.json();
 
-    console.log(data);
     display(data);
 }
 
