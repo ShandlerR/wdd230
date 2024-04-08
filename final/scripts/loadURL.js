@@ -52,7 +52,7 @@ function fillData(params, nowDate, pickupElement, personalElement, drinkElement,
         personalElement.innerHTML += `<br>Phone Number: ${number}`;
     }
 
-    // Fill in fruit names under "Drink Contents"
+    // Fill in fruit names under "Drink Information"
     const fruitNames = [];
 
     fruitNames[0] = params.get("firstFruit");
@@ -67,9 +67,17 @@ function fillData(params, nowDate, pickupElement, personalElement, drinkElement,
         fruitNames.push(params.get("thirdFruit"));
     }
 
+    drinkElement.innerHTML = `fruit(s):<br>`;
+
     for(let fruitName of fruitNames)
     {
         drinkElement.innerHTML += `${fruitName}<br>`;
+    }
+
+    //Fill in special instructions under "Drink Information"
+    if(params.get("special"))
+    {
+        drinkElement.innerHTML += `<br>Special Instructions:<br>${params.get("special")}`;
     }
 
     // Fill in calories, protein, carbs, fat, & sugar under "Nutritional Information"
