@@ -4,13 +4,13 @@
         <!-- Basic HTML Details -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Order a drink from Bountiful Food's Delicous Selection">
+        <meta name="description" content="Learn about Carlsbad California!">
         <meta name="author" content="Shandler Rechenberger">
-        <title>Order a Drink</title>
+        <title>About Bountiful Foods</title>
         <link rel="icon" href="images/favicon.ico">
     
         <!-- Social Media Meta Tags -->
-        <meta property="og:title" content="Bountiful Foods Order a Drink Page">
+        <meta property="og:title" content="Bountiful Foods About Page">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://shandlerr.github.io/wdd230/final/images/head-image.jpg">
         <meta property="og:url" content="https://shandlerr.github.io/wdd230/final/">
@@ -18,8 +18,8 @@
         <!-- CSS Styles -->
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/allPages.css">
-        <link rel="stylesheet" href="styles/order/base.css">
-        <link rel="stylesheet" href="styles/order/larger.css">
+        <link rel="stylesheet" href="styles/">
+        <link rel="stylesheet" href="styles/">
     
         <!-- CSS Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,29 +45,6 @@
     </nav>
     
     <main>
-        <h2>Order a Drink</h2>
-
-        <form method="get" action="confirm.html">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label>First Name*: <input type="text" name="fname" id="fname" required></label>
-                <label>Email*: <input type="email" name="email" id="email" required></label>
-                <label>Phone Number: <input type="tel" name="tel" id="tel"></label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Select Your Ingredients</legend>
-                <label>Fruit #1*:<select name="fruits" id="firstFruit" required></select></label>
-                <label>Fruit #2:<select name="fruits" id="secondFruit"><option value="none"></option></select></label>
-                <label>Fruit #3:<select name="fruits" id="thirdFruit"><option value="none"></option></select></label>
-
-                <label>Special Instructions: <input type="text" name="special" id="special"></label>
-            </fieldset>
-
-            <p>**payment is recieved on order pickup</p>
-
-            <input type="submit" value="Order My Drink">
-        </form>
     </main>
     
     <footer>
@@ -97,7 +74,6 @@
     <script src="scripts/ordersMade.js"></script>
 
     <!-- Page-specific Content -->
-    <script src="scripts/fillFruitData.js"></script>
 
 </body>
 </html>

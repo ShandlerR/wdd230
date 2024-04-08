@@ -12,6 +12,7 @@ async function getData()
     //console.table(data.Companies);
 
     setDisplay(data.Companies);
+    console.log(data);
 }
 
 

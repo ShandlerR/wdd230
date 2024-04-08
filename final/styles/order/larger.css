@@ -1,0 +1,12 @@
+@media screen and (min-width: 68.75em)
+{
+    input, select 
+    {
+        max-width: 56.25em;
+    }
+
+    main p 
+    {
+        text-align: center;
+    }
+}
