@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- Basic HTML Details -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Your personal Home for delicious drinks!">
+    <meta name="author" content="Shandler Rechenberger">
+    <title>Bountiful Foods</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Bountiful Foods Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://shandlerr.github.io/wdd230/final/images/head-image.jpg">
+    <meta property="og:url" content="https://shandlerr.github.io/wdd230/final/">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- CSS Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Bountiful Foods</h1>
+            <h2>Orders Made: <span id="orders"></span></h2>
+        </div>
+        <img src="images/banner.webp" alt="Fruit Picture" loading="lazy">
+    </header>
+    <nav>
+        <button></button>
+        <ul class="hidden">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order a Drink</a></li>
+            <li><a id="current" href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+    </main>
+    
+    <footer>
+
+        <div id="socialMedia">
+            <img src="images/facebook.png" alt="facebook Logo" loading="lazy">
+            <img src="images/instagram.png" alt="instagram Logo" loading="lazy">
+            <img src="images/twitter.png" alt="twitter Logo" loading="lazy">
+        </div>
+        <div>
+            <p>12:00AM - 2:00PM<br>(123) - 123 - 1231</p>
+            <p>274 Carlsbad Road<br>ABC, California</p>
+        </div>
+        <div>
+            <p>references:</p>
+            <ul>
+                <li>chatGPT (Text Generation)</li>
+                <li>www.fruityvice.com</li>
+                <li>openweathermap.org</li>
+            </ul>
+        </div>
+        <div><p>Last Modified: <span id="mod"></span></p></div>
+    </footer>
+
+    <!-- Footer and Header Content -->
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/lastMod.js"></script>
+
+    <!-- Page-specific Content -->
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
