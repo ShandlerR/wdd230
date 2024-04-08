@@ -2,7 +2,6 @@ const url = "https://api.openweathermap.org/data/2.5/forecast?lat=33.158&lon=-11
 const monthElement = document.querySelector("#date");
 const timeElement = document.querySelector("#time");
 const weatherElement = document.querySelector("#weather");
-const weatherIcon = document.querySelector("#weatherIcon");
 const weatherCards = document.querySelector("#weatherCards");
 
 async function apiFetch()
