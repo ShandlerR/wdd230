@@ -93,46 +93,51 @@ function displayWeeks(data, today)
 
         date = new Date(dayData.dt * 1000);
 
-        let card = document.createElement("div");
+        todate = new Date(today.dt * 1000);
 
-        let dateDisplay = document.createElement("p");
-        let timeDisplay = document.createElement("p");
-        let weatherDisplay = document.createElement("p");
-
-        //Setting dateDisplay
-        dateDisplay.textContent = `${date.getMonth()+1}/${date.getDate()}`;
-
-        //Setting timeDisplay
-        let times = convertToNormal(date);
-        timeDisplay.textContent = `${times[0]}:${times[1]}`;
-        if(times[2])
+        if((date.getDate() - todate.getDate()) <= 3)
         {
-            timeDisplay.textContent += "PM";
+
+            let card = document.createElement("div");
+
+            let dateDisplay = document.createElement("p");
+            let timeDisplay = document.createElement("p");
+            let weatherDisplay = document.createElement("p");
+
+            //Setting dateDisplay
+            dateDisplay.textContent = `${date.getMonth()+1}/${date.getDate()}`;
+
+            //Setting timeDisplay
+            let times = convertToNormal(date);
+            timeDisplay.textContent = `${times[0]}:${times[1]}`;
+            if(times[2])
+            {
+                timeDisplay.textContent += "PM";
+            }
+            else 
+            {
+                timeDisplay.textContent += "AM";
+            }
+
+
+            //setting weatherDisplay
+            weatherDisplay.innerHTML = `${dayData.main.temp}&deg;F - ${dayData.weather[0].description}`;
+
+            //Since only mornings are shown on mobile, adds a class to show which ones are nights
+            if(times[2] == true)
+            {
+                // add bigDisplay classList to Div
+                card.classList.add("night");
+            }
+
+            // Adds all elements to display
+            weatherCards.appendChild(card);
+
+            card.appendChild(dateDisplay);
+            card.appendChild(timeDisplay);
+            card.appendChild(weatherDisplay);
+
         }
-        else 
-        {
-            timeDisplay.textContent += "AM";
-        }
-
-
-        //setting weatherDisplay
-        weatherDisplay.innerHTML = `${dayData.main.temp}&deg;F - ${dayData.weather[0].description}`;
-
-        //Since only mornings are shown on mobile, adds a class to show which ones are nights
-        if(times[2] == true)
-        {
-            // add bigDisplay classList to Div
-            card.classList.add("night");
-        }
-
-        // Adds all elements to display
-        weatherCards.appendChild(card);
-
-        card.appendChild(dateDisplay);
-        card.appendChild(timeDisplay);
-        card.appendChild(weatherDisplay);
-
-        
     }
 }
 
