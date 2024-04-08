@@ -1,18 +1,24 @@
 :root 
 {
     --mainColor: #ffb3f1;
-    --backgroundColor: #2b3D41; 
+    --secondaryColor: #d1fcff;
+    --backgroundColor: #2b3D41;
+    --secondaryBackground: #4c5f6b;
+
+    --generalBorder: #87bcde 1px solid;
 }
 
 /* Whole page styling */
 
 body 
 {
+    text-align: center;
     background-color: var(--backgroundColor);
     color: var(--mainColor);
     margin: 0 3rem;
 }
 
+/* Remove later */
 img 
 {
     width: 80%;
@@ -44,12 +50,117 @@ header img
 /* Nav Styling */
 nav ul
 {
-    display: flex;
     list-style: none;
-    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    background-color: var(--secondaryBackground);
+    border: var(--generalBorder);
+    height: 100%;
+    padding: 5rem 2rem;
 }
 
-a 
+nav li 
+{
+    padding: 1rem 0;
+}
+
+nav ul li a 
+{
+    color: var(--secondaryColor);
+    font-size: 2.5rem;
+}
+
+#current
 {
     color: var(--mainColor);
+}
+
+nav ul li 
+{
+    margin: 10px 0;
+}
+
+nav ul.hidden
+{
+    position: fixed;
+    display: none;
+}
+
+nav button
+{
+    position: fixed;
+    font-size: 2.1rem;
+    width: 3rem;
+    background-color: var(--secondaryBackground);
+    color: var(--secondaryColor);
+    border: var(--generalBorder);
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+}
+
+nav button.open::before
+{
+    content: "X"
+}
+
+nav button::before
+{
+    content: "☰"
+}
+
+
+/* Main Content */
+
+main button
+{
+    margin: 1rem 0;
+}
+
+main h2
+{
+    margin-bottom: 0;
+}
+
+section
+{
+    border: var(--generalBorder);
+}
+
+section:not(section.weatherInfo)
+{
+    padding: 2rem;
+}
+
+/* Footer Stylings */
+
+footer
+{
+    border: var(--generalBorder);
+}
+
+#socialMedia
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+#socialMedia img
+{
+    width: 5rem;
+}
+
+footer div 
+{
+    border: var(--generalBorder);
+}
+
+footer ul
+{
+    list-style: none;
+    padding: 0;
 }

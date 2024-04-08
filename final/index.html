@@ -18,6 +18,7 @@
     <!-- CSS Styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
     <!-- CSS Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +35,8 @@
         <img src="images/banner.webp" alt="Fruit Picture">
     </header>
     <nav>
-        <ul>
+        <button></button>
+        <ul class="hidden">
             <li><a id="current" href="#">Home</a></li>
             <li><a href="order.html">Order a Drink</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -56,42 +58,39 @@
         </section>
 
         <h2>Weather Forecast</h2>
-        <section>
+        <section class="weatherInfo">
             <p id="date"></p>
             <p id="time"></p>
             <p id="weather"></p>
         </section>
-        <section id="weather-cards"></section>
+        <section class="weatherInfo" id="weather-cards"></section>
 
         <button>Try Now!</button>
     </main>
     
     <footer>
 
-        <div><p>Last Modified: <span id="mod"></span></p></div>
-
-        <div>
+        <div id="socialMedia">
             <img src="images/facebook.png" alt="facebook Logo" loading="lazy">
             <img src="images/instagram.png" alt="instagram Logo" loading="lazy">
             <img src="images/twitter.png" alt="twitter Logo" loading="lazy">
         </div>
-
         <div>
-            <p>12:00AM - 2:00PM</p>
-            <p>(123) - 123- 1234</p>
+            <p>12:00AM - 2:00PM<br>(123) - 123 - 1231</p>
+            <p>274 Carlsbad Road<br>ABC, California</p>
         </div>
-
         <div>
-            <p>274 Carlsbad road,<br>ABC California</p>
-        </div>
-
-        <div>
+            <p>references:</p>
             <ul>
-                <li>chatGPT</li>
+                <li>chatGPT (Text Generation)</li>
                 <li>www.fruityvice.com</li>
                 <li>openweathermap.org</li>
             </ul>
         </div>
+        <div><p>Last Modified: <span id="mod"></span></p></div>
     </footer>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/lastMod.js"></script>
 </body>
 </html>
