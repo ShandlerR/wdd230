@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <!-- Basic HTML Details -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Your personal Home for delicious drinks!">
-    <meta name="author" content="Shandler Rechenberger">
-    <title>Bountiful Foods</title>
-    <link rel="icon" href="images/favicon.ico">
-
-    <!-- Social Media Meta Tags -->
-    <meta property="og:title" content="Bountiful Foods Home Page">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://shandlerr.github.io/wdd230/final/images/head-image.jpg">
-    <meta property="og:url" content="https://shandlerr.github.io/wdd230/final/">
-
-    <!-- CSS Styles -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-
-    <!-- CSS Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <!-- Basic HTML Details -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Learn about Carlsbad California!">
+        <meta name="author" content="Shandler Rechenberger">
+        <title>About Bountiful Foods</title>
+        <link rel="icon" href="images/favicon.ico">
+    
+        <!-- Social Media Meta Tags -->
+        <meta property="og:title" content="Bountiful Foods About Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://shandlerr.github.io/wdd230/final/images/head-image.jpg">
+        <meta property="og:url" content="https://shandlerr.github.io/wdd230/final/">
+    
+        <!-- CSS Styles -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/allPages.css">
+        <link rel="stylesheet" href="styles/about/base.css">
+        <link rel="stylesheet" href="styles/about/larger.css">
+    
+        <!-- CSS Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
 
 <body>
     <header>
@@ -42,11 +43,30 @@
             <li><a id="current" href="#">About Us</a></li>
         </ul>
     </nav>
+    
     <main>
+        <section>
+            <h2>Founding of Carlsbad</h2>
+            <picture>
+                <source media="(max-width: 46.875em)" srcset="images/about-us/beach-small.jpg">
+                <source media="(max-width: 68.75em)" srcset="images/about-us/beach-medium.jpg">
+                <img src="images/about-us/beach-large.jpg" alt="A sunset over a beach" loading="lazy">
+            </picture>
+            <p> Carlsbad, California, originally known as Frazier's Station, traces its roots back to the late 19th century when a well driller named John Frazier tapped into a mineral spring in the area. The discovery of these healing waters led to the establishment of a health spa and resort destination. Renamed Carlsbad in the 1880s, the town rapidly grew as visitors flocked to experience the therapeutic benefits of its mineral springs.</p>
+        </section>
+
+        <section>
+            <h2>Transformation into a Coastal Gem</h2>
+            <picture>
+                <source media="(max-width: 46.875em)" srcset="images/about-us/sign-small.jpg">
+                <source media="(max-width: 68.75em)" srcset="images/about-us/sign-medium.jpg">
+                <img src="images/about-us/sign-large.jpg" alt="A sunset over a beach" loading="lazy">
+            </picture>
+            <p>Throughout the early 20th century, Carlsbad evolved from a small agricultural community into a vibrant coastal city. The arrival of the Santa Fe Railway in 1887 facilitated transportation and brought in tourists and settlers. The area's fertile soil supported the growth of flower fields, earning Carlsbad the nickname "The Flower Capital of the World." Today, Carlsbad retains its charm with a blend of rich history, stunning beaches, and a thriving tourist industry.</p>
+        </section>    
     </main>
     
     <footer>
-
         <div id="socialMedia">
             <img src="images/facebook.png" alt="facebook Logo" loading="lazy">
             <img src="images/instagram.png" alt="instagram Logo" loading="lazy">
@@ -70,8 +90,9 @@
     <!-- Footer and Header Content -->
     <script src="scripts/menu.js"></script>
     <script src="scripts/lastMod.js"></script>
+    <script src="scripts/ordersMade.js"></script>
 
     <!-- Page-specific Content -->
-    <script src="scripts/weather.js"></script>
+
 </body>
 </html>

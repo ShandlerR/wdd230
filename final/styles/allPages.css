@@ -15,13 +15,9 @@ body
     text-align: center;
     background-color: var(--backgroundColor);
     color: var(--mainColor);
-    margin: 0 3rem;
-}
+    margin: 0 3rem;    
+    font-family: "PT Serif";
 
-/* Remove later */
-main img:not(#weatherIcon)
-{
-    width: 80%;
 }
 
 /* Header Stling */
@@ -111,72 +107,6 @@ nav button::before
     content: "☰"
 }
 
-
-/* Main Content */
-
-main button
-{
-    margin: 1rem 0;
-    padding: 1rem;
-    font-size: 2rem;
-}
-
-main h2
-{
-    margin-bottom: 0;
-}
-
-section
-{
-    border: var(--generalBorder);
-}
-
-section:not(section.weatherInfo)
-{
-    padding: 2rem;
-}
-
-    /* Setting the Weather's Text in proper format */
-
-    .weatherInfo p
-    {
-        margin: 0;
-    }
-
-    .weatherInfo p:first-of-type
-    {
-        margin-top: 1rem;
-    }
-
-    .weatherInfo p:last-of-type, #weatherIcon
-    {
-        margin-bottom: 1rem;
-    }
-
-    #weatherIcon
-    {
-        height: 2rem;
-    }
-
-    #weather
-    {
-        display: inline-block;
-    }
-
-    /* Setting all the weather sections */
-
-    .night
-    {
-        display: none;
-    }
-
-    #weatherCards
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
 /* Footer Stylings */
 
 footer
@@ -206,4 +136,45 @@ footer ul
 {
     list-style: none;
     padding: 0;
+}
+
+
+
+
+
+@media screen and (min-width: 68.75em)
+{
+    /* Nav Fixes */
+    nav button
+    {
+        display: none;
+    }
+
+    nav ul.hidden
+    {
+        position: static;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 0;
+        background-color: transparent;
+    }
+
+    /* Footer Fixes */
+    footer 
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    footer div 
+    {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    footer div:last-of-type 
+    {
+        align-self: center;
+    }
+
 }

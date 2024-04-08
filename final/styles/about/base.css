@@ -1,0 +1,14 @@
+img 
+{
+    width: 80%;
+}
+
+.hidden 
+{
+    margin: 0;
+}
+
+main section 
+{
+    border: var(--generalBorder);
+}
