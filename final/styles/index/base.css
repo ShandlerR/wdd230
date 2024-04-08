@@ -9,8 +9,6 @@ main img:not(#weatherIcon)
 main button
 {
     margin: 1rem 0;
-    padding: 1rem;
-    font-size: 2rem;
 }
 
 main h2

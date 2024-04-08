@@ -1,6 +1,6 @@
 @media screen and (min-width: 68.75em)
 {
-    input, select 
+    input, select, textarea
     {
         max-width: 56.25em;
     }

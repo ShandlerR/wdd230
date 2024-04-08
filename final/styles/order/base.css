@@ -26,7 +26,7 @@ input, select
     height: 12.5em;
 }
 
-input, select 
+input, select, textarea
 {
     width: 100%;
     max-width: 26.5625em;

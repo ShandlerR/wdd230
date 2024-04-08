@@ -107,6 +107,13 @@ nav button::before
     content: "☰"
 }
 
+/* Main Stylings */
+main button
+{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
 /* Footer Stylings */
 
 footer
