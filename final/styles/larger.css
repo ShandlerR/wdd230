@@ -53,10 +53,15 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+    footer div 
+    {
+        border-top: none;
+        border-bottom: none;
+    }
+
     footer div:last-of-type 
     {
         align-self: center;
-        border: none;
     }
 
 
