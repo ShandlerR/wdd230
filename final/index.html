@@ -61,11 +61,12 @@
         <section class="weatherInfo">
             <p id="date"></p>
             <p id="time"></p>
+            <img id="weatherIcon" src="" alt="">
             <p id="weather"></p>
         </section>
-        <section class="weatherInfo" id="weather-cards"></section>
+        <section class="weatherInfo" id="weatherCards"></section>
 
-        <button>Try Now!</button>
+        <button onclick="window.location.href='order.html'">Try Now!</button>
     </main>
     
     <footer>
@@ -90,7 +91,11 @@
         <div><p>Last Modified: <span id="mod"></span></p></div>
     </footer>
 
+    <!-- Footer and Header Content -->
     <script src="scripts/menu.js"></script>
     <script src="scripts/lastMod.js"></script>
+
+    <!-- Page-specific Content -->
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
