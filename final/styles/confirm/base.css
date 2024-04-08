@@ -1,0 +1,15 @@
+section h2 
+{
+    text-align: center;
+}
+
+#pickupTime, #personalInfo, #drinkInfo, #nutrInfo
+{
+    border: var(--generalBorder);
+    text-align: left;
+}
+
+#pickupTime p, #personalInfo p, #drinkInfo p, #nutrInfo p
+{
+    padding-left: 1rem;
+}

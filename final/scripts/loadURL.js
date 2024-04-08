@@ -71,7 +71,7 @@ function fillData(params, nowDate, pickupElement, personalElement, drinkElement,
 
     for(let fruitName of fruitNames)
     {
-        drinkElement.innerHTML += `${fruitName}<br>`;
+        drinkElement.innerHTML += `* ${fruitName}<br>`;
     }
 
     //Fill in special instructions under "Drink Information"
